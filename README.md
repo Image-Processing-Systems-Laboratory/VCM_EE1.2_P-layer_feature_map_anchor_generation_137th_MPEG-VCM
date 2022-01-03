@@ -21,7 +21,7 @@ Detectron2   0.5
 Object-detection   0.1
 Pandas   1.3.3
 Numpy   1.21.2
-Opencv-python   4.5.3.56
+Opencv-python 4.5.3.56
 Pillow   8.3.1
 
 ffmpeg   4.4
