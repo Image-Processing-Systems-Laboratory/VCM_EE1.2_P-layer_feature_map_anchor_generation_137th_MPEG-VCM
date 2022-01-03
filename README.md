@@ -28,6 +28,14 @@ ffmpeg   4.4
 VTM   12.0
 
 #######################################################
+[Faster-RCNN model parameter]
+
+Download the Faster-RCNN model parameters from the following link: 
+  https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/faster_rcnn_X_101_32x8d_FPN_3x/139173657/model_final_68b088.pkl
+  
+Place the downloaded `model_final_68b088.pkl` file in the `models/x101fpn/` directory. 
+  
+#######################################################
 [OpenImages V6 Dataset]
 
 Download OpenImages V6 validation set according to the instruction from the following webpage:
