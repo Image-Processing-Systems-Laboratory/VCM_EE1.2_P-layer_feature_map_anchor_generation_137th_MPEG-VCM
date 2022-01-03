@@ -3,12 +3,15 @@
 #######################################################
 
 Author: Minhun Lee, Hansol Choi, Seungjin Park, Minsub Kim, and Donggyu Sim
+
 E-mail: {minhun, hschoi95, promo, minsub, dgsim}@kw.ac.kr
 
 #######################################################
 [Introduction]
 
-This package contains scripts to generate anchor results of object detection on P-layer features (p2, p3, p4, p5) extracted from OpenImages dataset for MPEG Video Coding for Machines(VCM). Please note that this test procedure is organized based on Nokia's latest contribution(m57343) for generating VCM anchor on the OpenImages dataset V6.
+This package contains scripts to generate anchor results of object detection on P-layer features (p2, p3, p4, p5) extracted from OpenImages dataset for MPEG Video Coding for Machines(VCM). 
+
+Please note that this test procedure is organized based on Nokia's latest contribution(m57343) for generating VCM anchor on the OpenImages dataset V6.
 
 #######################################################
 [Software environment]
@@ -16,15 +19,23 @@ This package contains scripts to generate anchor results of object detection on 
 Ubuntu    20.04.1 LTS
 
 Python    3.8.11
+
 Torch    1.9.0
+
 Detectron2   0.5
+
 Object-detection   0.1
+
 Pandas   1.3.3
+
 Numpy   1.21.2
+
 Opencv-python 4.5.3.56
+
 Pillow   8.3.1
 
 ffmpeg   4.4
+
 VTM   12.0
 
 #######################################################
