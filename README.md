@@ -1,6 +1,7 @@
 # VCM_EE1.2_P-layer_feature_map_anchor_generation_137th_MPEG-VCM
 
 #######################################################
+
 Author: Minhun Lee, Hansol Choi, Seungjin Park, Minsub Kim, and Donggyu Sim 
 E-mail: {minhun, hschoi95, promo, minsub, dgsim}@kw.ac.kr
 
