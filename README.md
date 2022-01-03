@@ -2,7 +2,7 @@
 
 #######################################################
 
-Author: Minhun Lee, Hansol Choi, Seungjin Park, Minsub Kim, and Donggyu Sim 
+Author: Minhun Lee, Hansol Choi, Seungjin Park, Minsub Kim, and Donggyu Sim
 E-mail: {minhun, hschoi95, promo, minsub, dgsim}@kw.ac.kr
 
 #######################################################
