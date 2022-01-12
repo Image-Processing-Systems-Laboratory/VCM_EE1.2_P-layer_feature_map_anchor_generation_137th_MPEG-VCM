@@ -4,7 +4,7 @@
 
 Author: Minhun Lee, Hansol Choi, Seungjin Park, Minsub Kim, and Donggyu Sim
 
-E-mail: {minhun, hschoi95, promo, minsub, dgsim}@kw.ac.kr
+E-mail: {minhun, hschoi95, promo, minsub20, dgsim}@kw.ac.kr
 
 #######################################################
 [Introduction]
