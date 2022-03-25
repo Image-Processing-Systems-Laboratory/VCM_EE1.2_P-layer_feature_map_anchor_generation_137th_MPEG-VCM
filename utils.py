@@ -125,3 +125,14 @@ def result_in_list(settings, number, result, set_index):
         f"{apm:.3f}",
         f"{apl:.3f}",
     ]
+
+def get_size(start_path = '.'):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(start_path):
+        for f in filenames:
+            fp = os.path.join(dirpath, f)
+            # skip if it is symbolic link
+            if not os.path.islink(fp):
+                total_size += os.path.getsize(fp)
+
+    return total_size
