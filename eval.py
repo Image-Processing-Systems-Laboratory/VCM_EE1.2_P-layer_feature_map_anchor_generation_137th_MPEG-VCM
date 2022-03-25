@@ -23,6 +23,8 @@ class Eval:
         self.model, self.cfg = utils.model_loader(settings)
         self.prepare_dir()
         utils.print_settings(settings, index)
+        
+        self.pixel_num = settings["pixel_num"]
 
     def prepare_dir(self):
         os.makedirs(f"info/{self.set_idx}", exist_ok=True)
@@ -101,8 +103,9 @@ class Eval:
         --input_predictions         output/{self.set_idx}_oi.txt \
         --output_metrics            output/{self.set_idx}_AP.txt", shell=True)
 
+        self.summary()
+        
         return 
-
 
     def _evaluation(self, fname):
 
@@ -118,7 +121,18 @@ class Eval:
         self.evaluator.process(inputs, outputs)
 
         return outputs
+    
+    def summary(self):
+        with open("results.csv", "a") as result_f:
+            with open(f"inference/{self.set_idx}_AP.txt", "rt") as ap_f:
+                ap = ap_f.readline()
+                ap = ap.split(",")[1][:-1]
 
+            size_basis = utils.get_size(f'feature/{self.set_idx}_bit/')
+            bpp = (size_basis + size_coeffs + size_mean)/self.pixel_num
+
+            result_f.write(f"{self.set_idx},{self.qp},{self.DeepCABAC_qstep},{bpp},{ap}\n")
+            
     def feat2feat(self, fname):
         pyramid = {}
 
