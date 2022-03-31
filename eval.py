@@ -124,14 +124,14 @@ class Eval:
     
     def summary(self):
         with open("results.csv", "a") as result_f:
-            with open(f"inference/{self.set_idx}_AP.txt", "rt") as ap_f:
+            with open(f"output/{self.set_idx}_AP.txt", "rt") as ap_f:
                 ap = ap_f.readline()
                 ap = ap.split(",")[1][:-1]
 
             size_basis = utils.get_size(f'feature/{self.set_idx}_bit/')
             bpp = (size_basis + size_coeffs + size_mean)/self.pixel_num
 
-            result_f.write(f"{self.set_idx},{self.qp},{self.DeepCABAC_qstep},{bpp},{ap}\n")
+            result_f.write(f"{self.set_idx},{self.VTM_param["QP"]}, {bpp},{ap}\n")
             
     def feat2feat(self, fname):
         pyramid = {}
