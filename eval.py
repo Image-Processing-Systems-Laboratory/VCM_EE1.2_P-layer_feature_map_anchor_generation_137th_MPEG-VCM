@@ -131,7 +131,7 @@ class Eval:
             size_basis = utils.get_size(f'feature/{self.set_idx}_bit/')
             bpp = (size_basis + size_coeffs + size_mean)/self.pixel_num
 
-            result_f.write(f"{self.set_idx},{bpp},{ap}\n")
+            result_f.write(f"{self.set_idx},{self.VTM_param["QP"]}, {bpp},{ap}\n")
             
     def feat2feat(self, fname):
         pyramid = {}
