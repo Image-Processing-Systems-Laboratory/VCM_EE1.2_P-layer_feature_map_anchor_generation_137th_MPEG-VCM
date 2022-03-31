@@ -124,7 +124,7 @@ class Eval:
     
     def summary(self):
         with open("results.csv", "a") as result_f:
-            with open(f"inference/{self.set_idx}_AP.txt", "rt") as ap_f:
+            with open(f"output/{self.set_idx}_AP.txt", "rt") as ap_f:
                 ap = ap_f.readline()
                 ap = ap.split(",")[1][:-1]
 
